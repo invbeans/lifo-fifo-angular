@@ -1,0 +1,69 @@
+div.control {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  margin: 0 auto;
+}
+
+div.form-group input {
+  margin-left: 10px;
+  height: auto;
+}
+
+button {
+  margin-left: 10px;
+}
+
+form {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+div.cur-elem{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+div.list-all{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+div.list-lifo,
+div.list-fifo {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 10px;
+}
+
+div.list-elem{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid rgb(48, 40, 30);
+  font-size: 20px;
+  text-align: center;
+}
+
+div.list-lifo .list-elem{
+  background-color: #789fb1;
+}
+
+div.list-fifo .list-elem{
+  background-color: #BE8C63;
+}
+
+button.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  background-color: #8FBDD3;
+}
+

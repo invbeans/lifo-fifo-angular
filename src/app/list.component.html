@@ -1,0 +1,36 @@
+<div class="control">
+  <form [formGroup]='form' novalidate (ngSubmit)='addElem()'>
+    <div class="form-group">
+      <label>Введите элемент:</label>
+      <input class="form-control" name="string" formControlName="inputString" />
+    </div>
+    <div class="form-group">
+      <button class="btn" [disabled]="form.invalid">
+        Добавить
+      </button>
+    </div>
+  </form>
+  <button class="btn" [disabled]="noStart" (click)="move()">
+    Шаг
+  </button>
+</div>
+
+<div class="cur-elem">Текущие элементы: LIFO - {{curLIFOString || "_"}}, FIFO - {{curFIFOString || "_"}}</div>
+<div class="list-all">
+  <div class="list-lifo" *ngIf="this.getLIFOElems().length !== 0">
+    <label>LIFO</label>
+    <div class="list-elem" *ngFor="let elem of this.getLIFOElems()">
+      {{elem}}
+    </div>
+  </div>
+
+  <div class="list-fifo" *ngIf="this.getFIFOElems().length !== 0">
+    <label>FIFO</label>
+    <div class="list-elem" *ngFor="let elem of this.getFIFOElems()">
+      {{elem}}
+    </div>
+  </div>
+</div>
+
+
+
