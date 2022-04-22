@@ -6,8 +6,8 @@
 
 ## Запуск
 
-Клонировать репозиторий с помощью команды 
-`git clone https://github.com/invbeans/lifo-fifo-angular.git`
-Для запуска перейти в папку, содержащую `angular.json`
-Запустить в терминале команду `ng serve`.
-Сайт будет доступен по ссылке `http://localhost:4200/`.
+Клонировать репозиторий с помощью команды <br />
+`git clone https://github.com/invbeans/lifo-fifo-angular.git` <br />
+Для запуска перейти в папку, содержащую `angular.json` <br />
+Запустить в терминале команду `ng serve`. <br />
+Сайт будет доступен по ссылке `http://localhost:4200/`. <br />
